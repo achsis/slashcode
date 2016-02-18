@@ -72,6 +72,9 @@ __template__
 				</div>
 				<input type="text" name="playing" value="[% useredit.playing | strip_attribute %]" size="40">
 			[%- END - %]
+			[% PROCESS formLabel value => 'IRC' %]
+			<input type="text" name="irc" value="[% useredit.irc | strip_attribute %]" size="40"><br>
+			<div class="notes">If set, this is always public</div>
 			[% PROCESS formLabel value => 'AIM' %]
 			<input type="text" name="aim" value="[% useredit.aim | strip_attribute %]" size="40"><br>
 			<div class="notes">Do not make this AIM nick public <input type="checkbox" name="aimdisplay" value="1"[% IF useredit.aimdisplay %] checked="checked" [% END %]></div>
