@@ -105,6 +105,12 @@ IF !useredit.is_anon;
 			PROCESS karma karma=useredit.karma admin_flag=user.is_admin;
 		END;
 
+
+		IF useredit.irc;
+			'<br><b>IRC (on chat.soylentnews.org):</b> ';
+			useredit.irc | strip_literal;
+		END;
+		
 		IF useredit.aim && !useredit.aimdisplay;
 			'<br><b>AOL IM:</b> ';
 			useredit.aim | strip_literal;

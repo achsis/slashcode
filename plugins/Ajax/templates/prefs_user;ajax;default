@@ -54,6 +54,14 @@ __template__
 
                         &nbsp;<p>
 
+                        <b>IRC</b>&nbsp;<input type="text" name="irc" value="[% user.irc | strip_attribute %]" size="40">
+                        <br>
+                        <div id="modalprefhelp_irc" class="modalprefhelp" style="display: none;">
+                             Your IRC nick on <a href=irc://chat.soylentnews.org:6667>chat.soylentnews.org</a>. Will be visible to others.
+                        </div>
+
+                        &nbsp;<p><br>
+
                         <b>AIM</b>&nbsp;<input type="text" name="aim" value="[% user.aim | strip_attribute %]" size="40">
                         <br>
 
